@@ -33,6 +33,8 @@ module.exports.datastores = {
   ***************************************************************************/
 
   default: {
+    adapter: require('sails-mysql'),
+    url: 'mysql://invisiblerbase:019181716151413121a@db4free.net:3306/invisiblerbase',
 
     /***************************************************************************
     *                                                                          *
