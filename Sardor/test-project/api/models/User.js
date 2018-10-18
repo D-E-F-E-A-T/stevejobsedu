@@ -7,6 +7,8 @@
 module.exports = {
 
   attributes: {
+    autoCreatedAt:false, //As we don't have this saved in the database	
+	  autoUpdatedAt:false, //As we don't have this saved in the database	
 
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
