@@ -3,25 +3,27 @@ module.exports = {
 
     title: {
       type: 'string',
-      required: true,
-      maxLength: 200
+      maxLength: 200,
+      required: true
     },
+
     message: {
       type: 'string',
-      required: true,
-      maxLength: 2500
+      maxLength: 2500,
+      required: true
     },
+
     files: {
-      type: 'array',
-      required: true
+      collection:'files',
+      via: 'question_id'
     },
-    creator: {
-      model: 'User',
-      required: true
+
+    user_id: {
+      model: 'user',
     },
-    bestAnswer: {
-      model: 'Answers',
-      required: true
+    
+    answer_id: {
+      model: 'answers',
     }
 
   },

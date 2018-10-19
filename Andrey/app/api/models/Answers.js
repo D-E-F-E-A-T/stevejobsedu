@@ -1,30 +1,32 @@
 module.exports = {
   attributes: {
 
-    questionId: {
-      model: 'Questions',
-      required: true
+    question_id: {
+      collection:'questions',
+      via: 'answer_id'
     },
+
     message: {
       type: 'string',
       required: true,
-      maxLength: 2500
+      maxLength: 2500,
     },
+
     files: {
-      type: 'array',
-      required: true
+      collection:'files',
+      via: 'answer_id'
     },
-    creator: {
-      model: 'User',
-      required: true
+
+    user_id: {
+      model: 'user',
     },
+
     dislikes: {
       type: 'number',
-      required: true
     },
+
     likes: {
       type: 'number',
-      required: true
     }
 
 
